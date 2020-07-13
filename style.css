@@ -18,6 +18,7 @@ body {
   border: 1px solid white;
   color: white;
   margin-top: 32px;
+  margin-bottom: 20px;
 }
 
 .btn-cv:hover {
@@ -48,20 +49,29 @@ body {
 }
 .page-header h3 {
   font-size: 20px;
+  color: white;
   opacity: 0.5;
 }
 
 /* FOOTER ON DESKTOP VERSION */
 .desktop-footer {
   width: 100%;
-  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.icons {
 
+.desktop-footer a {
+  color: white;
 }
+
 .desktop-footer i {
   font-size: 25px;
+  padding: 0px 13px;
+}
+
+.desktop-footer i:hover {
+  color: #A7FFF6;
 }
 
 /*CONTENT OF THE PAGE*/
@@ -75,19 +85,34 @@ body {
   padding: 6em 3em 3em 3em;
 }
 
+/*CONTENT SECTIONS */
+
 .content-section {
   border-bottom: 2px solid rgba(200,200,200,0.5);
   padding: 50px 0;
 }
 
+.content-section h1, h2, h3 {
+  color: #787878;
+}
+
+.content-section h1 {
+  font-size: 32px;
+}
+
+.content-section h3 {
+  font-size: 24px;
+}
+
+.content-section p {
+  color: #a2a2a2;
+}
+
+/* PROJECTS */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
-}
-
-.grid-container-skills {
-
 }
 
 .project-picture {
@@ -100,14 +125,13 @@ body {
 }
 
 .grid-item {
-  background: rgb(220,220,220);
 }
 
-/*The Whole flipping card CSS */
+/*The Whole flipping card CSS for SKILLS */
 .grid-container-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 25px;
 }
 
 .maincontainer {
