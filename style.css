@@ -1,0 +1,176 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/*IMAGES*/
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/*Buttons*/
+.btn-cv {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-top: 32px;
+}
+
+.btn-cv:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+
+/*Big Stuff: Containers, Banners, etc.*/
+
+.page-header {
+  padding-top: 150px;
+  padding: 150px 50px 0px 0px;
+  width: 30%;
+  height: 100vh;
+  text-align: right;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1504293538349-0be9a181d474?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+.page-header h1 {
+  font-size: 30px;
+}
+.page-header h3 {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+/* FOOTER ON DESKTOP VERSION */
+.desktop-footer {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.icons {
+
+}
+.desktop-footer i {
+  font-size: 25px;
+}
+
+/*CONTENT OF THE PAGE*/
+.page-content {
+  height: 150vh;
+  width: 70%;
+  margin-left: 30vw;
+}
+
+.large-container {
+  padding: 6em 3em 3em 3em;
+}
+
+.content-section {
+  border-bottom: 2px solid rgba(200,200,200,0.5);
+  padding: 50px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.grid-container-skills {
+
+}
+
+.project-picture {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1em;
+  margin-bottom: 15px;
+}
+
+.grid-item {
+  background: rgb(220,220,220);
+}
+
+/*The Whole flipping card CSS */
+.grid-container-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.maincontainer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  border-radius: 15px;
+}
+
+.maincontainer:hover .thecard {
+  transform: rotateY(180deg);
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thefront i {
+  font-size: 50px;
+  color: rgb(70,70,70);
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: rgb(70,70,70);
+  border-radius: 15px;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theback p {
+  color: white;
+  margin: 12px 0;
+}
+
+.back-content p {
+  text-align: center;
+  margin: 3px 0;
+}
+
+
+
+/* Media Queries for Phone Responsiveness */
